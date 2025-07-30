@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num ,key,count=0;
+        num = sc.nextInt();
+        key = sc.nextInt();
+        while(num>0){
+            int rem = num%10;         
+            num = num/10;
+        if(rem==key){
+            count++;
+        }
+             
+        }
+            System.out.println(count);  
+}
+}
